@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Life Path Predictions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-container"></div>
+    
+    <header>
+        <div class="header-content">
+            <h1>Cosmic Insights</h1>
+            <p>The universe has a message for you. Get a glimpse into your destiny, revealed one day at a time.</p>
+        </div>
+        <div class="star-particle" style="top: 15%; left: 10%;"></div>
+        <div class="star-particle large" style="top: 25%; left: 20%;"></div>
+        <div class="star-particle" style="top: 10%; left: 30%;"></div>
+        <div class="star-particle large" style="top: 35%; left: 40%;"></div>
+        <div class="star-particle" style="top: 20%; left: 50%;"></div>
+        <div class="star-particle large" style="top: 15%; left: 60%;"></div>
+        <div class="star-particle" style="top: 30%; left: 70%;"></div>
+        <div class="star-particle large" style="top: 25%; left: 80%;"></div>
+        <div class="star-particle" style="top: 20%; left: 90%;"></div>
+    </header>
+    
+    <div class="container">
+        <main>
+            <section id="input-section" class="card">
+                <h2>Enter Your Details</h2>
+                <p class="intro-text">Get your personalized daily prediction based on your life path number and name analysis.</p>
+                <form id="prediction-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <button type="submit" class="btn">Get Your Prediction <i class="fas fa-star"></i></button>
+                </form>
+            </section>
+
+            <section id="result-section" class="card hidden">
+                <div class="result-header">
+                    <h2>Your Celestial Guidance</h2>
+                    <span id="current-date"></span>
+                </div>
+                <div class="life-path-info">
+                    <h3>Your Life Path Number: <span id="life-path-number"></span></h3>
+                    <p id="life-path-meaning"></p>
+                </div>
+                <div class="prediction">
+                    <h3>Today's Personalized Prediction</h3>
+                    <div id="daily-prediction"></div>
+                </div>
+                <div class="buttons">
+                    <button id="new-prediction" class="btn"><i class="fas fa-sync-alt"></i> More predictions about me</button>
+                    <button id="share-prediction" class="btn">Share <i class="fas fa-share-alt"></i></button>
+                    <button id="new-person" class="btn btn-secondary"><i class="fas fa-user-plus"></i> New Prediction</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Cosmic Insights &copy; <span id="current-year"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
